@@ -196,7 +196,7 @@ class EgoPayPlugin extends AbstractPlugin
 
         // różnica kwoty zatwierdzonej i kwoty wymaganej musi być równa zero
         // && nazwa waluty musi się zgadzać
-        if (Number::compare($transaction->getPayment()->getApprovedAmount(), $transaction->getRequestedAmount()) === 0
+        if (Number::compare($transaction->getProcessedAmount(), $transaction->getRequestedAmount()) === 0
             && $transaction->getPayment()->getPaymentInstruction()->getCurrency() == $data->get('sCurrency')
         ) {
             // wszystko ok
