@@ -1,0 +1,27 @@
+{
+    "name": "mikoweb/vsymfo-payment-egopay-bundle",
+    "type": "symfony-bundle",
+    "description": "vSymfo EgoPay Payment Bundle",
+    "keywords": ["payment", "egopay"],
+    "homepage": "http://vision-web.pl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafał Mikołajun",
+            "email": "rafal@vision-web.pl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "mikoweb/vsymfo-payments": "dev-master",
+        "mikoweb/vsymfo-core": "dev-master",
+        "egopay/sci": "1.4.*@dev"
+    },
+    "autoload": {
+        "psr-0": { "vSymfo\\Payment\\EgoPayBundle\\": "" }
+    },
+    "target-dir": "vSymfo/Payment/EgoPayBundle",
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,5 @@
+vsymfo_payment_egopay_callback:
+    pattern: /transaction/{id}/urlc
+    defaults: { _controller: vSymfoPaymentEgopayBundle:Callback:callback }
+    requirements:
+        id: \d+
