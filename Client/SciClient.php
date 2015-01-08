@@ -33,6 +33,11 @@ class SciClient
     private $storePassword;
 
     /**
+     * @var string
+     */
+    private $checksumKey;
+
+    /**
      * @param string $storeId
      * @param string $storePassword
      * @param string $checksumKey
